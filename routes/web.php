@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::get('/', 'Web\Home@home')->name('home');

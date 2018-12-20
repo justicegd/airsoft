@@ -51,42 +51,31 @@
          
           <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="category.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="category.html">Asia</a>
-                  <a class="dropdown-item" href="category.html">Europe</a>
-                  <a class="dropdown-item" href="category.html">Dubai</a>
-                  <a class="dropdown-item" href="category.html">Africa</a>
-                  <a class="dropdown-item" href="category.html">South America</a>
-                </div>
 
-              </li>
+              @foreach($topMenus as $topMenu)
+                @if($topMenu->hasLevel2)
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="category.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$topMenu->name}}</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                      @foreach($topMenu->level2 as $level2)
+                        <a class="dropdown-item" href="{{route('home',["ca_id"=>$topMenu->menuId])}}">{{$level2->name}}</a>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="category.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown05">
-                  <a class="dropdown-item" href="category.html">Lifestyle</a>
-                  <a class="dropdown-item" href="category.html">Food</a>
-                  <a class="dropdown-item" href="category.html">Adventure</a>
-                  <a class="dropdown-item" href="category.html">Travel</a>
-                  <a class="dropdown-item" href="category.html">Business</a>
-                </div>
+                      @endforeach
 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+                    </div>
+                  </li>
+                @else
+                  <li class="nav-item ">
+                    <a class="nav-link active" href="index.html">{{$topMenu->name}}</a>
+                  </li>
+                @endif
+
+              @endforeach
+
             </ul>
             
           </div>
-        </div
+        </div>
       </nav>
     </header>
     <!-- END header -->
@@ -305,33 +294,14 @@
             <div class="sidebar-box">
               <h3 class="heading">Categories</h3>
               <ul class="categories">
-                <li><a href="#">Courses <span>(12)</span></a></li>
-                <li><a href="#">News <span>(22)</span></a></li>
-                <li><a href="#">Design <span>(37)</span></a></li>
-                <li><a href="#">HTML <span>(42)</span></a></li>
-                <li><a href="#">Web Development <span>(14)</span></a></li>
+                @foreach($categorys as $category)
+                  <li><a href="#">{{$category->name}}</a></li>
+                @endforeach
+
               </ul>
             </div>
             <!-- END sidebar-box -->
 
-            <div class="sidebar-box">
-              <h3 class="heading">Tags</h3>
-              <ul class="tags">
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Adventure</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Freelancing</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Adventure</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Freelancing</a></li>
-              </ul>
-            </div>
-          </div>
           <!-- END sidebar -->
 
         </div>
