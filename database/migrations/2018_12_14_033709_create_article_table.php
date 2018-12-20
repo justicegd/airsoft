@@ -15,9 +15,10 @@ class CreateArticleTable extends Migration
     {
         Schema::create('article', function (Blueprint $table) {
             $table->increments('id')->comment('流水號');
+            $table->integer('category_id')->comment('分類ID');
             $table->string('title')->comment('標題');
             $table->string('discription')->comment('描述');
-            $table->string('content')->comment('內文');
+            $table->text('content')->comment('內文');
             $table->timestamps();
         });
     }

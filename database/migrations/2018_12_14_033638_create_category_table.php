@@ -15,6 +15,9 @@ class CreateCategoryTable extends Migration
     {
         Schema::create('category', function (Blueprint $table) {
             $table->increments('id')->comment('流水號');
+            $table->integer('parent_id')->comment('父階層ID');
+            $table->integer('level')->comment('類別階層');
+            $table->integer('show_sort')->comment('顯示排序');
             $table->string('name')->comment('分類名稱');
             $table->timestamps();
         });
