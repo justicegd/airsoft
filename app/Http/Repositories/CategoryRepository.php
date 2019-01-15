@@ -27,5 +27,10 @@ class CategoryRepository
         return $this->model->where('level',1)->orderBy('show_sort')->get();
     }
 
+    public function find($categoryId)
+    {
+        return $this->model->find($categoryId);
+    }
+
 
 }
