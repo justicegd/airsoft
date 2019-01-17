@@ -54,9 +54,21 @@ class ArticleService
      */
     public function addArticle($inputData,$request)
     {
-        $path  = $request->file('img')->store('article',["disk"=>"public"]);
-        $inputData->img = $path;
+        if(!empty($request->file('img'))){
+            $path  = $request->file('img')->store('article',["disk"=>"public"]);
+            $inputData->img = $path;
+        }
         return $this->articleRepository->add($inputData);
+    }
+
+    public function editArticle($inputData, Request $request, $articleId)
+    {
+        if(!empty($request->file('img'))){
+            $path  = $request->file('img')->store('article',["disk"=>"public"]);
+            $inputData->img = $path;
+        }
+
+        return $this->articleRepository->edit($inputData,$articleId);
     }
 
 

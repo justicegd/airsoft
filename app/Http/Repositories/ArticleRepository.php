@@ -45,5 +45,14 @@ class ArticleRepository
 
     }
 
+    public function edit($inputData, $articleId)
+    {
+        $article = $this->model->find($articleId);
+        foreach ($inputData as $cloumn=>$value){
+            $article->$cloumn =    $value;
+        }
+        return $article->save();
+    }
+
 
 }
