@@ -19,6 +19,7 @@ class CreateArticleTable extends Migration
             $table->string('title')->comment('標題');
             $table->string('discription')->comment('描述');
             $table->text('content')->comment('內文');
+            $table->text('img')->nullable()->comment('圖片名稱');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@
                 @foreach($articles as $article)
                     <div class="col-md-6">
                         <a href="{{route('article',[$article->id,"ca_id"=>$article->category_id])}}" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                            <img src="view/images/img_{{$article->id}}.jpg" alt="Image placeholder">
+                            <img src="{{$article->img_url}}" alt="Image placeholder">
                             <div class="blog-content-body">
                                 <div class="post-meta">
                                     <span class="category">{{$article->category->name}}</span>

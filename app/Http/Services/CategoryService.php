@@ -100,5 +100,13 @@ class CategoryService
         return $categoryId;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getCategoryChooes()
+    {
+        return $this->categoryRepository->get();
+    }
+
 
 }

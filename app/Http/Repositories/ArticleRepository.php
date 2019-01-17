@@ -35,5 +35,15 @@ class ArticleRepository
         return $this->model->find($articleId);
     }
 
+    public function add($inputData)
+    {
+        $article = $this->model;
+        foreach ($inputData as $cloumn=>$value){
+            $article->$cloumn =    $value;
+        }
+        return $article->save();
+
+    }
+
 
 }

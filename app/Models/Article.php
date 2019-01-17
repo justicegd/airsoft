@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Article extends Model
 {
@@ -12,4 +13,11 @@ class Article extends Model
     {
         return $this->belongsTo('App\Models\Category', 'category_id', 'id');
     }
+
+    public function getImgUrlAttribute(){
+        $img = $this->img;
+        return Storage::url($img );
+    }
+
+
 }

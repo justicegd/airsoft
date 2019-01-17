@@ -4,7 +4,9 @@ namespace App\Http\Services;
 
 use App\Http\Repositories\ArticleRepository;
 use App\Http\Repositories\CategoryRepository;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleService
 {
@@ -43,6 +45,18 @@ class ArticleService
     public function find($articleId)
     {
         return $this->articleRepository->find($articleId);
+    }
+
+    /**
+     * @param $inputData
+     * @param  Request  $request
+     * @return bool
+     */
+    public function addArticle($inputData,$request)
+    {
+        $path  = $request->file('img')->store('article',["disk"=>"public"]);
+        $inputData->img = $path;
+        return $this->articleRepository->add($inputData);
     }
 
 
