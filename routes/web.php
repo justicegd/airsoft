@@ -13,6 +13,7 @@
 
 Route::get('/', 'Web\Home@home')->name('home');
 
-Route::get('/article',function (){
-   return view('article');
-} );
+Route::get('/article/{articleId}','Web\Article@article')->name('article');
+
+
+

@@ -8,14 +8,11 @@ use App\Http\Services\CategoryService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
-class Home extends Controller
+class Article extends Controller
 {
-    function home(Request $request)
+    function article(Request $request,$articleId)
     {
-        $page       = $request->input('page', 1);
         $categoryId = $request->input('ca_id', 0);
-        $limit      = 15;
-        $topLimit   = 5;
 
         /** @var CategoryService $categoryService */
         $categoryService = App::make(CategoryService::class);
@@ -26,18 +23,17 @@ class Home extends Controller
 
         /** @var ArticleService $articleService */
         $articleService = App::make(ArticleService::class);
-        $articles       = $articleService->getArticles($categoryId, $page, $limit);
-        $topArticles    = $articleService->getTopArticles($categoryId, $topLimit);
+        $article  = $articleService->find($articleId);
+
 
         $data           = [
             'topMenus'     => $topMenu,
             'categories'   => $categories,
-            'articles'     => $articles,
             'categoryName' => $categoryName,
-            'topArticles'  => $topArticles,
             'categoryId'   => $categoryId,
+            'article'      => $article
         ];
 
-        return view('home', $data);
+        return view('article', $data);
     }
 }

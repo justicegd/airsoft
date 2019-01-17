@@ -30,5 +30,10 @@ class ArticleRepository
         return $article->orderBy('created_at','desc')->limit($limit)->get();
     }
 
+    public function find($articleId)
+    {
+        return $this->model->find($articleId);
+    }
+
 
 }

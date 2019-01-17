@@ -40,5 +40,10 @@ class ArticleService
         return $article;
     }
 
+    public function find($articleId)
+    {
+        return $this->articleRepository->find($articleId);
+    }
+
 
 }
