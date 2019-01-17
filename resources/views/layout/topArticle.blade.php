@@ -6,7 +6,7 @@
                 <div class="owl-carousel owl-theme home-slider">
                     @foreach($topArticles as $topArticle)
                         <div>
-                            <a href="{{route('article',[$article->id,"ca_id"=>$article->category_id])}}" class="a-block d-flex align-items-center height-lg" style="background-image: url('{{$topArticle->img_url}}'); ">
+                            <a href="{{route('article',[$topArticle->id,"ca_id"=>$article->category_id])}}" class="a-block d-flex align-items-center height-lg" style="background-image: url('{{$topArticle->img_url}}'); ">
                                 <div class="text half-to-full">
                                     <div class="post-meta">
                                         <span class="category">{{$topArticle->category->name}}</span>
@@ -23,6 +23,4 @@
             </div>
         </div>
     </div>
-
-
 </section>

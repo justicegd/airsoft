@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="調整新增/修改文章回傳訊息">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="調整輪播文章連結錯誤">
       <change beforePath="$PROJECT_DIR$/resources/views/layout/topArticle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/topArticle.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/layout/topArticle.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
@@ -336,7 +335,7 @@
       <workItem from="1547438398816" duration="26556000" />
       <workItem from="1547545014971" duration="228000" />
       <workItem from="1547545250489" duration="1944000" />
-      <workItem from="1547603910073" duration="23325000" />
+      <workItem from="1547603910073" duration="23892000" />
     </task>
     <task id="LOCAL-00001" summary="初版">
       <created>1544756723963</created>
@@ -408,11 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547716394849</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="調整輪播文章連結錯誤">
+      <created>1547717827277</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547717827277</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76331000" />
+    <option name="totallyTimeSpent" value="76898000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -438,9 +444,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22776572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22776572" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -508,7 +514,8 @@
     <MESSAGE value="文章內容頁完成&#10;-與首頁串接完成" />
     <MESSAGE value="新增文章功能完成" />
     <MESSAGE value="調整新增/修改文章回傳訊息" />
-    <option name="LAST_COMMIT_MESSAGE" value="調整新增/修改文章回傳訊息" />
+    <MESSAGE value="調整輪播文章連結錯誤" />
+    <option name="LAST_COMMIT_MESSAGE" value="調整輪播文章連結錯誤" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php">
@@ -839,7 +846,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/layout/topArticle.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
           </folding>
