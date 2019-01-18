@@ -45,6 +45,7 @@ class Article extends Controller
         $inputData->title       = $request->input("title");
         $inputData->discription = $request->input("discription");
         $inputData->content     = $request->input("content");
+        $inputData->img         = $request->input("img");
 
 
         /** @var ArticleService $articleService */
@@ -62,6 +63,7 @@ class Article extends Controller
         $inputData->discription = $request->input("discription");
         $inputData->content     = $request->input("content");
         $articleId              = $request->input("articleId");
+        $inputData->img         = $request->input("img");
 
 
         /** @var ArticleService $articleService */
