@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="- 新增/修改文章頁圖片改為紀錄網址">
+    <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="- 調整輪播文章分類錯誤&#10;- 調整修改文章圖片網址錯誤">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Repositories/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/ArticleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/ArticleService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/ArticleService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/topArticle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/topArticle.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/backend/article.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state relative-caret-position="342">
+              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -74,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="234">
               <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
               <folding>
                 <element signature="e#44#80#0#PHP" expanded="true" />
@@ -87,7 +87,10 @@
         <entry file="file://$PROJECT_DIR$/resources/views/layout/topArticle.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="208" selection-start-line="8" selection-start-column="208" selection-end-line="8" selection-end-column="208" />
+              <caret line="8" column="92" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +126,8 @@
       <find>lara</find>
       <find>Comments</find>
       <find>i</find>
-      <find>img</find>
       <find>img_ur</find>
+      <find>img</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;view/images</replace>
@@ -167,10 +170,10 @@
         <option value="$PROJECT_DIR$/database/seeds/CategorySeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/article.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/article.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/topArticle.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Services/ArticleService.php" />
         <option value="$PROJECT_DIR$/app/Http/Repositories/ArticleRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/topArticle.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/article.blade.php" />
       </list>
     </option>
@@ -550,11 +553,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547792502031</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="- 調整首頁排序錯誤&#10;- 調整修改文章圖片顯示錯誤">
+      <created>1547794237869</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1547794237869</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82152000" />
+    <option name="totallyTimeSpent" value="83032000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -580,9 +590,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22776572" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22776572" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -654,7 +664,8 @@
     <MESSAGE value="- 增加文章分類&#10;- 調整文章內容" />
     <MESSAGE value="- 首頁輪播圖改為讀圖床&#10;- 文章圖片改為讀圖床" />
     <MESSAGE value="- 新增/修改文章頁圖片改為紀錄網址" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 新增/修改文章頁圖片改為紀錄網址" />
+    <MESSAGE value="- 調整首頁排序錯誤&#10;- 調整修改文章圖片顯示錯誤" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 調整首頁排序錯誤&#10;- 調整修改文章圖片顯示錯誤" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php">
@@ -802,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-          <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/img/dqitk3znjqVkbBroQWQHw7fFLKcxtIJoTVQm1AJt.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/img/.gitignore" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_033709_create_article_table.php">
@@ -918,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/topArticle.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="208" selection-start-line="8" selection-start-column="208" selection-end-line="8" selection-end-column="208" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -960,10 +954,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/topArticle.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="92" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend/article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        <state relative-caret-position="342">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
         </state>
       </provider>
     </entry>

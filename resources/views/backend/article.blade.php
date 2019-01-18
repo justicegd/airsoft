@@ -17,8 +17,7 @@
     描述:<textarea name="discription">{{isset($article->discription)?$article->discription:""}}</textarea><br>
     內文:<textarea name="content">{{isset($article->content)?$article->content:""}}</textarea><br>
     @if(isset($article->img))
-        <img src="{{$article->img_url}}"><br>
-        <input type="hidden" name="imgUrl" value="{{$article->img}}">
+        <img src="{{$article->img}}" height="600" width="600"><br>
     @endif
     圖片:<input type="text" name="img" value="{{isset($article->img)?$article->img:""}}">
     <input type="submit">
