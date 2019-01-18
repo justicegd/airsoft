@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="- 首頁輪播圖改為讀圖床&#10;- 文章圖片改為讀圖床">
+    <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="- 新增/修改文章頁圖片改為紀錄網址">
       <change beforePath="$PROJECT_DIR$/resources/views/backend/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/article.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/backend/article.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state relative-caret-position="396">
+              <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -405,7 +405,7 @@
       <workItem from="1547438398816" duration="26556000" />
       <workItem from="1547545014971" duration="228000" />
       <workItem from="1547545250489" duration="1944000" />
-      <workItem from="1547603910073" duration="28427000" />
+      <workItem from="1547603910073" duration="28596000" />
     </task>
     <task id="LOCAL-00001" summary="初版">
       <created>1544756723963</created>
@@ -505,11 +505,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547791149697</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- 新增/修改文章頁圖片改為紀錄網址">
+      <created>1547792364104</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1547792364104</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81433000" />
+    <option name="totallyTimeSpent" value="81602000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -524,7 +531,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -537,7 +544,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22776572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22776572" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -608,7 +615,8 @@
     <MESSAGE value="調整輪播文章連結錯誤" />
     <MESSAGE value="- 增加文章分類&#10;- 調整文章內容" />
     <MESSAGE value="- 首頁輪播圖改為讀圖床&#10;- 文章圖片改為讀圖床" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 首頁輪播圖改為讀圖床&#10;- 文章圖片改為讀圖床" />
+    <MESSAGE value="- 新增/修改文章頁圖片改為紀錄網址" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 新增/修改文章頁圖片改為紀錄網址" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php">
@@ -938,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend/article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        <state relative-caret-position="396">
+          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
         </state>
       </provider>
     </entry>

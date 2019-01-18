@@ -20,7 +20,7 @@
         <img src="{{$article->img_url}}"><br>
         <input type="hidden" name="imgUrl" value="{{$article->imgl}}">
     @endif
-    圖片:<input type="text" name="img">
+    圖片:<input type="text" name="img" value="{{isset($article->content)?$article->content:""}}">
     <input type="submit">
 </form>
 
