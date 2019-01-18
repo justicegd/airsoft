@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/backend/article.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+              <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -405,7 +405,7 @@
       <workItem from="1547438398816" duration="26556000" />
       <workItem from="1547545014971" duration="228000" />
       <workItem from="1547545250489" duration="1944000" />
-      <workItem from="1547603910073" duration="28596000" />
+      <workItem from="1547603910073" duration="28704000" />
     </task>
     <task id="LOCAL-00001" summary="初版">
       <created>1544756723963</created>
@@ -512,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547792364104</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- 新增/修改文章頁圖片改為紀錄網址">
+      <created>1547792502031</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547792502031</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81602000" />
+    <option name="totallyTimeSpent" value="81710000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -947,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/backend/article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
         </state>
       </provider>
     </entry>
