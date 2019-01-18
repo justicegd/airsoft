@@ -18,9 +18,9 @@
     內文:<textarea name="content">{{isset($article->content)?$article->content:""}}</textarea><br>
     @if(isset($article->img))
         <img src="{{$article->img_url}}"><br>
-        <input type="hidden" name="imgUrl" value="{{$article->img_url}}">
+        <input type="hidden" name="imgUrl" value="{{$article->imgl}}">
     @endif
-    圖片:<input type="file" name="img">
+    圖片:<input type="text" name="img">
     <input type="submit">
 </form>
 
