@@ -59,6 +59,15 @@ class CategorySeeder extends Seeder
                 "created_at" => $date,
                 "updated_at" => $date,
             ],
+            [
+                "id"         => 6,
+                "parent_id"  => 3,
+                "level"      => 2,
+                "show_sort"  => 2,
+                "name"       => "場地相關",
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
         ];
 
         DB::table('category')->insert($data);
