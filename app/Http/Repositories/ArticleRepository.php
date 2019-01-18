@@ -13,14 +13,23 @@ class ArticleRepository
         $this->model = $model;
     }
 
-    function findByCategories($categories)
+    function findByCategories($categories,$orderBy=[])
     {
-        return $this->model->whereIn('category_id',$categories);
+        $article = $this->model->whereIn('category_id',$categories);
+        foreach ($orderBy as $cloumn=>$sort){
+            $article  = $article->orderBy($cloumn,$sort);
+        }
+        return $article ;
     }
 
-    function getPageByCategories($categories, $page, $limit)
+    function getPageByCategories($selectData)
     {
-        $article = $this->findByCategories($categories);
+        $categories = $selectData->categories;
+        $page       = $selectData->page;
+        $limit      = $selectData->limit;
+        $orderBy    = $selectData->orderBy;
+        $article = $this->findByCategories($categories,$orderBy);
+
         return $article->paginate($limit, ['*'], 'page', $page);
     }
 

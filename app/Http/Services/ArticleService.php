@@ -24,7 +24,16 @@ class ArticleService
         $categoryService = App::make(CategoryService::class);
         $categoryIdSons  = $categoryService->findAllCategory($categoryId);
 
-        $article = $this->articleRepository->getPageByCategories($categoryIdSons, $page, $limit)->appends(["ca_id"=>$categoryId]);
+        $selectData = (object)[
+            "categories" => $categoryIdSons,
+            "page"       => $page,
+            "limit"      => $limit,
+            "orderBy"    => [
+                "created_at" => "desc"
+            ]
+        ];
+
+        $article = $this->articleRepository->getPageByCategories($selectData)->appends(["ca_id"=>$categoryId]);
 
         return $article;
     }
