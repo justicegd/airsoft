@@ -15,11 +15,17 @@ Route::get('/', 'Web\Home@home')->name('home');
 
 Route::get('/article/{articleId}','Web\Article@article')->name('article');
 
-Route::get('/backend/article/{articleId}','Backend\Article@article')->name('addArticlePage');
+Route::get('/login',function (){
+    return view('backend.login');
+})->name('loginPage');
 
-Route::post('/backend/article/','Backend\Article@addArticle')->name('addArticle');
+Route::post('/login','Backend\Authorization@login')->name('login');
 
-Route::put('/backend/article/','Backend\Article@editArticle')->name('editArticle');
+
+Route::get('/logout','Backend\Authorization@logout')->name('logout');
+
+
+
 
 
 
