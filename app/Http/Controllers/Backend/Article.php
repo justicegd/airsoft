@@ -35,7 +35,7 @@ class Article extends Controller
             "msg"        => $msg
         ];
 
-        return view('Backend.article', $data);
+        return view('backend.article.article', $data);
     }
 
     function addArticle(Request $request)
@@ -52,7 +52,7 @@ class Article extends Controller
         $articleService = App::make(ArticleService::class);
         $articleService->addArticle($inputData,$request);
 
-        return redirect()->route('Backend-addArticlePage',[0,'msg'=>'新增完成']);
+        return redirect()->route('articleList');
     }
 
     function editArticle(Request $request)
@@ -70,7 +70,19 @@ class Article extends Controller
         $articleService = App::make(ArticleService::class);
         $articleService->editArticle($inputData,$request,$articleId);
 
-        return redirect()->route('Backend-addArticlePage',[0,'msg'=>'修改完成']);
+        return redirect()->route('articleList');
 
+    }
+
+    function list()
+    {
+        /** @var ArticleService $articleService */
+        $articleService = App::make(ArticleService::class);
+        $articles = $articleService->getAllArticle();
+
+        $data = [
+            "articles"=>$articles
+        ];
+        return view("backend.article.list",$data);
     }
 }

@@ -80,5 +80,10 @@ class ArticleService
         return $this->articleRepository->edit($inputData,$articleId);
     }
 
+    public function getAllArticle()
+    {
+        return $this->articleRepository->get();
+    }
+
 
 }

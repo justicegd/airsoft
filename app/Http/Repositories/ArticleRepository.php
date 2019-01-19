@@ -63,5 +63,10 @@ class ArticleRepository
         return $article->save();
     }
 
+    public function get()
+    {
+        return $this->model->get();
+    }
+
 
 }

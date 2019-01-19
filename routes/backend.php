@@ -1,8 +1,10 @@
 <?php
 
 Route::get('/',function (){
-    return "asd";
+    return redirect()->route("articleList");
 })->name('home');
+
+Route::get('/article/list','Backend\Article@list')->name('articleList');
 
 Route::get('/article/{articleId}','Backend\Article@article')->name('addArticlePage');
 
