@@ -1,5 +1,5 @@
 {{isset($msg)?$msg:""}}
-<script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+<script src="{{asset("plugins\ckeditor\ckeditor.js")}}"></script>
 <form action="{{route($action)}}" method="post" Enctype="Multipart/Form-Data">
     {{method_field($method)}}
     {{csrf_field()}}
