@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32704ee-5765-4b6b-b2dd-22099ee21bc3" name="Default" comment="- 增加文章修改列表">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/article/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Repositories/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/ArticleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/ArticleService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/ArticleService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/article/article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backend.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/routes/backend.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -573,11 +567,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547879530083</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- 增加文章修改列表">
+      <created>1547882008625</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1547882008625</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94227000" />
+    <option name="totallyTimeSpent" value="94340000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -603,9 +604,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22776572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22776572" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -680,7 +681,8 @@
     <MESSAGE value="- 調整首頁排序錯誤&#10;- 調整修改文章圖片顯示錯誤" />
     <MESSAGE value="- 新增/修改文章增加youtube外掛" />
     <MESSAGE value="- 增加後台登入驗證" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 增加後台登入驗證" />
+    <MESSAGE value="- 增加文章修改列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 增加文章修改列表" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/balita/blog-single.html">
@@ -1023,7 +1025,7 @@
     <entry file="file://$PROJECT_DIR$/routes/backend.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>

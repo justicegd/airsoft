@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/',function (){
-    return redirect()->route("articleList");
+    return redirect()->route("backend-articleList");
 })->name('home');
 
 Route::get('/article/list','Backend\Article@list')->name('articleList');
