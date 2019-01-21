@@ -52,7 +52,7 @@ class Article extends Controller
         $articleService = App::make(ArticleService::class);
         $articleService->addArticle($inputData,$request);
 
-        return redirect()->route('articleList');
+        return redirect()->route('backend-articleList');
     }
 
     function editArticle(Request $request)
@@ -70,7 +70,7 @@ class Article extends Controller
         $articleService = App::make(ArticleService::class);
         $articleService->editArticle($inputData,$request,$articleId);
 
-        return redirect()->route('articleList');
+        return redirect()->route('backend-articleList');
 
     }
 
