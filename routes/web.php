@@ -24,6 +24,10 @@ Route::post('/login','Backend\Authorization@login')->name('login');
 
 Route::get('/logout','Backend\Authorization@logout')->name('logout');
 
+//Route::get('/test',function (){
+//    return view('test');
+//})->name('test');
+
 
 
 

@@ -15,7 +15,9 @@
             <tr>
                 <td>{{$article->category->name}}</td>
                 <td>{{$article->title}}</td>
-                <td><input type="button" onclick="window.open('{{route("backend-addArticlePage",[$article->id,"ca_id"=>$article->category_id])}}')" value="修改"></td>
+                <td><input type="button" onclick="window.open('{{route("backend-addArticlePage",[$article->id,"ca_id"=>$article->category_id])}}')" value="修改">
+                    <input type="button" onclick="window.open('{{route('article',[$article->id,"ca_id"=>$article->category_id])}}')" value="觀看文章">
+                </td>
             </tr>
         @endforeach
     </table>
