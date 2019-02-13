@@ -12,6 +12,10 @@ Route::post('/article','Backend\Article@addArticle')->name('addArticle');
 
 Route::put('/article','Backend\Article@editArticle')->name('editArticle');
 
+Route::get('/test',function (){
+    return view('backend.layout.main');
+})->name('test2');
+
 
 
 

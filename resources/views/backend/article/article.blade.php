@@ -1,3 +1,5 @@
+@extends('backend.layout.main')
+@section('content')
 {{isset($msg)?$msg:""}}
 <script src="{{asset("plugins\ckeditor\ckeditor.js")}}"></script>
 <form action="{{route($action)}}" method="post" Enctype="Multipart/Form-Data">
@@ -24,3 +26,5 @@
 </form>
 
 <script>CKEDITOR.replace("content");</script>
+
+@endsection('content')
