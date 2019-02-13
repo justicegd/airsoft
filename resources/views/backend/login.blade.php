@@ -12,10 +12,10 @@
   <title>SB Admin - Login</title>
 
   <!-- Custom fonts for this template-->
-  <link href="{{asset("SBadmin/vendor/fontawesome-free/css/all.min.css")}}" rel="stylesheet" type="text/css">
+  <link href="{{asset("SBAdmin/vendor/fontawesome-free/css/all.min.css")}}" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template-->
-  <link href="{{asset("SBadmin/css/sb-admin.css")}}" rel="stylesheet">
+  <link href="{{asset("SBAdmin/css/sb-admin.css")}}" rel="stylesheet">
 
 </head>
 
@@ -48,11 +48,11 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{asset("SBadmin/vendor/jquery/jquery.min.js")}}"></script>
-  <script src="{{asset("SBadmin/vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+  <script src="{{asset("SBAdmin/vendor/jquery/jquery.min.js")}}"></script>
+  <script src="{{asset("SBAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="{{asset("SBadmin/vendor/jquery-easing/jquery.easing.min.js")}}"></script>
+  <script src="{{asset("SBAdmin/vendor/jquery-easing/jquery.easing.min.js")}}"></script>
 
 </body>
 
