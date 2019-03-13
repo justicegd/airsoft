@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>文文日誌</title>
+    @if(isset($web_title))
+      <title>{{$web_title."::"}}文文日誌</title>
+      @else
+      <title>文文日誌</title>
+    @endif
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
