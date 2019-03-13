@@ -26,12 +26,16 @@ class Article extends Controller
         $article  = $articleService->find($articleId);
 
 
-        $data           = [
-            'topMenus'     => $topMenu,
-            'categories'   => $categories,
-            'categoryName' => $categoryName,
-            'categoryId'   => $categoryId,
-            'article'      => $article
+        $data = [
+            'topMenus'        => $topMenu,
+            'categories'      => $categories,
+            'categoryName'    => $categoryName,
+            'categoryId'      => $categoryId,
+            'article'         => $article,
+            "web_title"       => $article->title,
+            "web_url"         => $request->fullUrl(),
+            "web_img"         => $article->img,
+            "web_discription" => $article->discription
         ];
 
         return view('article', $data);
