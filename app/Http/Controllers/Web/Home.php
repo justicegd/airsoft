@@ -12,6 +12,7 @@ class Home extends Controller
 {
     function home(Request $request)
     {
+
         $page       = $request->input('page', 1);
         $categoryId = $request->input('ca_id', 0);
         $limit      = 15;
