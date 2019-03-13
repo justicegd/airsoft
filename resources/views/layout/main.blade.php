@@ -17,7 +17,7 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="{{asset("view/css/style.css")}}">
     {{--FB Meta--}}
-    @include('layout.fbMeta')
+    @include('layout.meta.fb')
   </head>
   <body>
 

@@ -34,7 +34,7 @@ class Article extends Controller
             'article'         => $article,
             "web_title"       => $article->title,
             "web_url"         => $request->fullUrl(),
-            "web_img"         => $article->img,
+            "web_img"         => $article->img ,
             "web_discription" => $article->discription
         ];
 

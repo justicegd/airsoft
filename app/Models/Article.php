@@ -19,5 +19,12 @@ class Article extends Model
         return Storage::url($img );
     }
 
+    public function getImgAttribute($value){
+        $value = !empty($value)?$value:"https://i.imgur.com/siip6vJ.jpg";
+        return $value ;
+    }
+
+
+
 
 }
