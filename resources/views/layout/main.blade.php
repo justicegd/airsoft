@@ -9,7 +9,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="google-site-verification" content="ALI93RflHLGf2EU8qc8_vrIPb3cfpxv_LWAKgM0Gn_E" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300, 400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{asset("view/css/bootstrap.css")}}">
     <link rel="stylesheet" href="{{asset("view/css/animate.css")}}">
