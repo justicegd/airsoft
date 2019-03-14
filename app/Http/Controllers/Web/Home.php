@@ -37,6 +37,7 @@ class Home extends Controller
             'categoryName' => $categoryName,
             'topArticles'  => $topArticles,
             'categoryId'   => $categoryId,
+            "web_title"    => $categoryName,
         ];
 
         return view('home', $data);
