@@ -28,6 +28,8 @@ Route::get('/logout','Backend\Authorization@logout')->name('logout');
 //    return view('test');
 //})->name('test');
 
+Route::get('/sitemap.xml','Web\Sitemap@getSitemap')->name('getSitemap');
+
 
 
 
