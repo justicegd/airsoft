@@ -24,6 +24,11 @@
 
         </div>
     </section>
+
+    {{--codesnippet--}}
+    <link rel="stylesheet" href="{{asset("plugins/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css")}}">
+    <script src="{{asset("plugins/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js")}}"></script>
+    <script>    hljs.initHighlightingOnLoad();</script>
 @endsection
 
 
