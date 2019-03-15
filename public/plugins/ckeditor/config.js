@@ -7,7 +7,4 @@ CKEDITOR.editorConfig = function( config ) {
     config.extraPlugins = 'youtube';
     config.extraPlugins = 'codesnippet';
     config.codeSnippet_theme = 'rainbow';
-    config.codeSnippet_languages = {
-        php: 'PHP'
-    };
 };
